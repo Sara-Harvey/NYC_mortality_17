@@ -2,7 +2,8 @@ Gem::Specification.new do |s|
   s.name        = 'NYC_mortality_17'
   s.version     = '0.0.0'
   s.date        = '2019-06-18'
-  s.summary     = "Helping readers navigate the report"
+  s.summary     = "Helping readers navigate the Summary of Vital Statistics 2017 for
+the City of New York"
   s.description = "Understanding the city's annual report for where, how and how many New Yorkers die."
   s.authors     = ["Sara Harvey"]
   s.email       = 'saraharveynyc@gmail.com'
