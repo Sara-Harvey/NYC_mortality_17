@@ -5,8 +5,7 @@ module NYCMortality17
     def start
     	puts "hey?"
 
-    	PDF::Reader.read
-
+    	Scraper.read
     end
 
   end      

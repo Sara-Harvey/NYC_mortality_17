@@ -7,7 +7,7 @@ the City of New York"
   s.description = "Understanding the city's annual report for where, how and how many New Yorkers die."
   s.authors     = ["Sara Harvey"]
   s.email       = 'saraharveynyc@gmail.com'
-  s.files       = ["bin/NYC_mortality_17", "lib/NYC_mortality_17.rb", "lib/NYC_mortality_17/cli.rb", "lib/NYC_mortality_17/reader.rb", "spec_helper.rb", "spec/NYC_mortality_17_spec.rb"]
+  s.files       = ["bin/NYC_mortality_17", "lib/NYC_mortality_17.rb", "lib/NYC_mortality_17/cli.rb", "lib/NYC_mortality_17/scraper.rb", "spec_helper.rb", "spec/NYC_mortality_17_spec.rb"]
   s.homepage    =
     'https://rubygems.org/gems/NYC_mortality_17'
   s.license       = 'MIT'
