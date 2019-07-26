@@ -1,9 +1,7 @@
 # NYCMortality17
 
-Hey!
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/NYC_mortality_17`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Provides easy access to the sex, race/ethnicity and neighborhood details of the 2017 Summary of Vital Statistics for the
+City of New York -- basically, how different people groups died in New York in 2017. Development still in progress.
 
 ## Installation
 
@@ -33,7 +31,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/NYC_mortality_17.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Sara-Harvey/NYC_mortality_17.
 
 ## License
 
