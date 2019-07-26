@@ -8,16 +8,22 @@ module NYCMortality17
             puts "Death rates for New York City 2017"
             puts "Enter the letter (A, B, C or D) to see information for:"
             puts ""
-            puts "A. Leading causes of death"
-            puts "B. Leading causes of premature death"
-            puts "C. Homicides by community district"
-            puts "D. Drug-related deaths by community district"    
+            puts "A. Death rates by neighborhood (Community District)"
+            puts "B. Leading causes of death"
+            puts "C. Leading causes of premature death"
+            puts "D. Homicides by community district"
+            puts "E. Drug-related deaths by community district"    
 
             reply = gets.strip
             puts ""
 
             case(reply)
-            	when "A"
+            	
+                when "A"
+                    puts "Death rates by neighborhood (Community District)"
+                    Scraper.read 
+
+                when "B"
                     puts "Leading causes of death"
                     puts ""
                     puts "Select a number to see information organized by:"
@@ -29,14 +35,12 @@ module NYCMortality17
                     reply2 = gets.strip
                     case(reply2)
                         when "1"
-                            Scraper.read 
+                            "Still working on it."                          
                         else 
-                            "Chimichanga"
+                            "Still under construction."
                     end
 
-
-
-    			when "B"
+    			when "C"
     				puts "I'll build this soon."
     			else
     				puts "thanks for checking in."
