@@ -1,16 +1,19 @@
 module NYCMortality17
   
     class Scraper
-        attr_accessor :pdf_version, :info, :metadata, :page_count
+        @@content = []
 
-        def self.read
-
-            puts "hi!"
+        def self.read          
 
             io     = open('https://www1.nyc.gov/assets/doh/downloads/pdf/vs/2017sum.pdf')
-            reader = PDF::Reader.new(io)
-            puts reader.info
+            reader = PDF::Reader::Turtletext.new(io)
 
+            textangle = reader.bounding_box do
+              page 12
+              below /MN01/i
+
+            end
+            puts textangle.text
         end
     end
 end
