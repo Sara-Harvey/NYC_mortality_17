@@ -1,6 +1,6 @@
 # NYCMortality17
 
-Provides easy access to the sex, race/ethnicity and neighborhood details of the 2017 Summary of Vital Statistics for the
+Provides easy access to the neighborhood, sex and race/ethnicity details of the 2017 Summary of Vital Statistics for the
 City of New York -- basically, how different people groups died in New York in 2017. Development still in progress.
 
 ## Installation
