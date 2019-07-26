@@ -1,6 +1,8 @@
 # NYCMortality17
 
+<<<<<<< HEAD
 Provides easy access to the neighborhood, sex and race/ethnicity details of the 2017 Summary of Vital Statistics for the City of New York -- basically, how different people groups died in New York in 2017. Development still in progress.
+>>>>>>> 1014961bdc750ae96999d3100e9dd08638fe50a8
 
 ## Installation
 
@@ -30,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/NYC_mortality_17.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Sara-Harvey/NYC_mortality_17.
 
 ## License
 
