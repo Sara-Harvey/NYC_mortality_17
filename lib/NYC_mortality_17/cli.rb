@@ -6,46 +6,36 @@ module NYCMortality17
             puts "The City of New York"
             puts ""
             puts "Death rates for New York City 2017"
-            puts "Enter the letter (A, B, C or D) to see information for:"
+            puts "by neighborhood (Community District)"
             puts ""
-            puts "A. Death rates by neighborhood (Community District)"
-            puts "B. Leading causes of death"
-            puts "C. Leading causes of premature death"
-            puts "D. Homicides by community district"
-            puts "E. Drug-related deaths by community district"    
+
+            Scraper.read
+            puts ""
+
+            puts "Enter a number to see figures by neighborhood"
+            puts "1. Manhattan"
+      		puts "2. Bronx"
+            puts "3. Brooklyn"
+            puts "4. Queens"
+            puts "5. Staten Island"
 
             reply = gets.strip
             puts ""
 
             case(reply)
-            	
-                when "A"
-                    puts "Death rates by neighborhood (Community District)"
-                    Scraper.read 
-
-                when "B"
-                    puts "Leading causes of death"
+                
+                when "1"
+                    puts "Fancy pants"
                     puts ""
-                    puts "Select a number to see information organized by:"
-                    puts "1. community district"
-                    puts "2. sex"
-                    puts "3. racial/ethnic group"
-                    puts "4. neighborhod poverty"
 
-                    reply2 = gets.strip
-                    case(reply2)
-                        when "1"
-                            "Still working on it."                          
-                        else 
-                            "Still under construction."
-                    end
+                when "2"
+                    puts "Mario lives here"
+                    puts ""
 
-    			when "C"
-    				puts "I'll build this soon."
-    			else
-    				puts "thanks for checking in."
-   			end 				
-    end
+                    #reply2 = gets.strip
+                    #case(reply2)
+     end
+     end                   
 
   end      
 end
