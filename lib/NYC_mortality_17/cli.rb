@@ -10,6 +10,7 @@ module NYCMortality17
         puts ""
 
         make_neighborhoods
+        display_neighborhoods
         puts ""
 
         puts "Enter a number to see rates by neighborhood"
@@ -25,11 +26,11 @@ module NYCMortality17
         case(reply)
                 
             when "1"
-                puts "Fancy!"
+                puts "Uptown girl"
                 puts ""
 
             when "2"
-                puts "Mario's from here"
+                puts "Mario and Luigi are hometown boys"
                 puts ""
         end
     end
@@ -37,8 +38,11 @@ module NYCMortality17
     def make_neighborhoods
         neighborhood_array = Scraper.read
         Neighborhood.iterate_neighborhoods(neighborhood_array)
-        puts Neighborhood.all
     end                   
+
+    def display_neighborhoods
+        Neighborhood.all
+    end
 
   end      
 end

@@ -1,3 +1,4 @@
+require 'pry'
 module NYCMortality17
   
     class Scraper
