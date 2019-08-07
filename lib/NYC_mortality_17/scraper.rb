@@ -1,20 +1,26 @@
-require 'pry'
 module NYCMortality17
   
     class Scraper
+
+      @@textangle = []
 
         def self.read     
    
             io     = open('https://www1.nyc.gov/assets/doh/downloads/pdf/vs/2017sum.pdf')
             reader = PDF::Reader::Turtletext.new(io)
 
-            textangle = reader.bounding_box do
+            @@textangle = reader.bounding_box do
               page 12
               below /MN01/i
               above /375.0/i
             end
-            textangle.text
+            @@textangle.text
         end
+    
+        def self.see_textangle
+          @@textangle.text
+        end
+
     end
 end
 
