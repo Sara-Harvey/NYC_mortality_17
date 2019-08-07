@@ -11,10 +11,10 @@ module NYCMortality17
             textangle = reader.bounding_box do
               page 12
               below /MN01/i
-            
+              above /375.0/i
             end
             textangle.text
-            end
+        end
     end
 end
 

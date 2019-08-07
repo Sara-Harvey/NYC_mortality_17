@@ -9,8 +9,11 @@ module NYCMortality17
         puts "by neighborhood (Community District)"
         puts ""
 
-        make_neighborhoods
-        display_neighborhoods
+        neighborhood_array = Scraper.read
+        Neighborhood.iterate_neighborhoods(neighborhood_array)
+        Neighborhood.see_manhattan
+        #make_neighborhoods
+        #display_neighborhoods
         puts ""
 
         puts "Enter a number to see rates by neighborhood"
@@ -35,10 +38,10 @@ module NYCMortality17
         end
     end
 
-    def make_neighborhoods
-        neighborhood_array = Scraper.read
-        Neighborhood.iterate_neighborhoods(neighborhood_array)
-    end                   
+    #def make_neighborhoods
+    #    neighborhood_array = Scraper.read
+    #    Neighborhood.iterate_neighborhoods(neighborhood_array)
+    #end                   
 
     def display_neighborhoods
         Neighborhood.all
