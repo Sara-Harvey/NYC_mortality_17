@@ -1,6 +1,4 @@
-module NYCMortality17
-  
-    class Scraper
+class NYCMortality17::Scraper
 
       @@textangle = []
 
@@ -16,11 +14,5 @@ module NYCMortality17
             end
             @@textangle.text
         end
-    
-        def self.see_textangle
-          @@textangle.text
-        end
-
-    end
 end
 

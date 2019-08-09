@@ -1,34 +1,42 @@
-require 'pry'
 module NYCMortality17
   class CLI
 
+
+
     def intro
 
+        Borough.make_boroughs
         data = Scraper.read
-        Neighborhood.make_boroughs(data)
 
-        puts "Summary of Vital Statistics 2017".blue
-        puts "The City of New York".blue
+        puts ""
+        puts "Summary of Vital Statistics 2017"
+        puts "City of New York"
         puts ""
         puts "Death rates for New York City 2017".blue.bold
         puts "by neighborhood (Community District)".blue.bold
-        puts ""   
+        puts ""
+        puts "Visit the chart on p. 12"
+        puts "https://www1.nyc.gov/assets/doh/downloads/pdf/vs/2017sum.pdf"
+        puts ""
+        puts "Per 100,000 people"
+        puts "Citywide average: 545.7"
+        puts ""
 
         start     
     end
 
     def start
 
-        puts "Enter a number to see neighborhoods by borough".blue
-        puts "or type exit"
+        puts "Enter a number to see neighborhoods by borough".blue.bold
+        puts "Or type exit"
         puts ""
-        puts "1. Manhattan"
-        puts "2. Bronx"
-        puts "3. Brooklyn"
-        puts "4. Queens"
-        puts "5. Staten Island"
+        
+        display_boroughs #Borough.all
+        
+        puts 
         puts "6. See all"
         puts "7. See options again"
+        puts ""
 
         reply = gets.strip
         puts ""
@@ -69,11 +77,18 @@ module NYCMortality17
 
             when "exit"
                 puts "Thanks for visiting!".blue.bold
+                puts ""
 
             else 
                 start
         end
+    end
+ 
+    def display_boroughs
+      Borough.all.each.with_index(1) do |value, index|
+      puts "#{index}. #{value.name}".blue
+    end
+    end
 
     end
-    end    
 end

@@ -1,4 +1,22 @@
+=begin
 class Neighborhood
+attr_accessor :name, :borough, #:rate
+
+  #@@all = []
+
+  def initialize(name, borough)
+    @name = name
+    #@rate = rate
+    @borough = borough
+    #@@all << self
+  end
+
+  #def.make_neighborhoods(data)
+
+end
+=end
+
+=begin
 
     @@manhattan = []
     @@bronx = []
@@ -50,18 +68,16 @@ class Neighborhood
     puts @@all#.sort_by {|i| i.odd?}
 
     #@@all.each_slice(2) do |pair|
-     #puts pair[1]
-        #puts pair[0]#.colorize(:red).bold
-        #puts pair[1]
-        #puts ""
+     #   puts pair[0].colorize(:red).bold
+      #  puts pair[1]
+       # puts ""
       
     #Item.all.sort_by {|object| object.calories}
 
-
-      #end
     end
+      end
+=end
 
-  end
 
 
 
