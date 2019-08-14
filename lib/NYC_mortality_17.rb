@@ -1,5 +1,4 @@
 require 'rubygems'
-#require 'pdf/reader'
 require 'pdf-reader'# -v 1.1.1'
 require 'pdf-reader-turtletext'
 require 'open-uri'

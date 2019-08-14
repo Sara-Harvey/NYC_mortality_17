@@ -1,4 +1,7 @@
-class NYCMortality17::Scraper
+require 'pry'
+module NYCMortality17
+  
+    class Scraper
 
       @@textangle = []
 
@@ -14,5 +17,5 @@ class NYCMortality17::Scraper
             end
             @@textangle.text
         end
+    end
 end
-

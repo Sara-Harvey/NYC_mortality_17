@@ -6,15 +6,19 @@ attr_accessor :name, :neighborhoods
   def initialize(name)
     @name = name
     @neighborhoods = []
-    @@all << self#.name
+    @@all << self
   end
 
   def self.make_boroughs
-    boroughs = ["Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island"]
-    boroughs.each do |borough|
-      name = borough
-      Borough.new(name)
-    end
+    manhattan = Borough.new("Manhattan")
+    bronx = Borough.new("Bronx")
+    brooklyn = Borough.new("Brooklyn")
+    queens = Borough.new("Queens")
+    staten_island = Borough.new("Staten Island")
+  end
+
+  def self.add_neighborhood(neighborhood)
+    neighborhoods << neighborhood
   end
 
   def self.all
