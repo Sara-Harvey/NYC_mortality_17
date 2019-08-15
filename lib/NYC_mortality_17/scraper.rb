@@ -14,8 +14,10 @@ module NYCMortality17
               page 12
               below /MN01/i
               above /375.0/i
-            end
-            @@textangle.text
+            
+            end 
+            data = @@textangle.text
+        
         end
     end
 end

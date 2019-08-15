@@ -41,13 +41,13 @@ module NYCMortality17
         case(reply)
                 
             when "1"
-                def Neighborhood.make_neighborhoods(data)
-                manhattan_neighborhood.neighborhoods.map {|neighborhood| "#{neighborhood.name} \n #{neighborhood.rate}" }
-            end
+
+                puts "Hey!"
+                #puts Borough.see_manhattan
 
             when "exit"
                 puts "Thanks for visiting!".blue.bold
-                puts ""
+                puts
 
             else 
                 start
@@ -55,8 +55,8 @@ module NYCMortality17
         end
 
         def show_boroughs
-          Borough.all.each.with_index(1) do |value, index|
-          puts "#{index}. #{value.name}".blue
+            Borough.all.each.with_index(1) do |value, index|
+            puts "#{index}. #{value.name}".blue
           end
         end
 
