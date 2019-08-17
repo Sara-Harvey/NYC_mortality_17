@@ -1,8 +1,6 @@
 # NYCMortality17
 
-<<<<<<< HEAD
-Provides easy access to the neighborhood, sex and race/ethnicity details of the 2017 Summary of Vital Statistics for the City of New York -- basically, how different people groups died in New York in 2017. Development still in progress.
->>>>>>> 1014961bdc750ae96999d3100e9dd08638fe50a8
+Providing easier access to the details of the 2017 Summary of Vital Statistics for the City of New York -- basically, which neighborhoods had the highest death rates. A type of "interactive sidebar" that could pair well with online journalism. Development still in progress.
 
 ## Installation
 
