@@ -56,6 +56,10 @@ module NYCMortality17
                 Scraper.see_staten_island
                 start
 
+            when "6"
+                Scraper.see_all
+                start
+
             when "exit"
                 puts "Thanks for visiting!".blue.bold
                 puts

@@ -44,29 +44,65 @@ module NYCMortality17
         def self.see_manhattan
           puts @manhattan.name.blue.bold
           data
-          @manhattan.neighborhoods.map {|neighborhood| puts "#{neighborhood.name} \n #{neighborhood.rate}\n\n"}          
-        end
+          list = @manhattan.neighborhoods.sort_by {|neighborhood| neighborhood.rate.to_i}
+
+          list.each do |neighborhood|
+          puts neighborhood.name.blue
+          puts neighborhood.rate
+          puts  
+          end
+        end  
 
         def self.see_the_bronx
           puts @bronx.name.blue.bold
           data
-          @bronx.neighborhoods.map {|neighborhood| puts "#{neighborhood.name} \n #{neighborhood.rate}\n\n"}
+          list = @bronx.neighborhoods.sort_by {|neighborhood| neighborhood.rate.to_i}
+
+          list.each do |neighborhood|
+          puts neighborhood.name.blue
+          puts neighborhood.rate
+          puts  
+          end        
         end
 
         def self.see_brooklyn
-          puts @brooklyn.name.blue.bold
+           puts @brooklyn.name.blue.bold
           data
-          @brooklyn.neighborhoods.map {|neighborhood| puts "#{neighborhood.name} \n #{neighborhood.rate}\n\n"}
+          list = @brooklyn.neighborhoods.sort_by {|neighborhood| neighborhood.rate.to_i}
+
+          list.each do |neighborhood|
+          puts neighborhood.name.blue
+          puts neighborhood.rate
+          puts  
+          end          
         end
 
         def self.see_queens
           puts @queens.name.blue.bold
           data
-          @queens.neighborhoods.map {|neighborhood| puts "#{neighborhood.name} \n #{neighborhood.rate}\n\n"}
+          list = @queens.neighborhoods.sort_by {|neighborhood| neighborhood.rate.to_i}
+
+          list.each do |neighborhood|
+          puts neighborhood.name.blue
+          puts neighborhood.rate
+          puts  
+          end          
         end
 
         def self.see_staten_island
-          puts "Still in development"
+          puts "Under development"
+        end
+
+        def self.see_all
+          puts "All neighborhoods".bold.blue
+          puts
+          list = Neighborhood.all.sort_by {|neighborhood| neighborhood.rate.to_i}
+          list.each do |neighborhood|
+          puts neighborhood.name.blue.bold
+          puts neighborhood.borough.name.blue
+          puts neighborhood.rate 
+          puts
+          end
         end
 
     end
