@@ -20,6 +20,7 @@ module NYCMortality17
 
     def start
 
+        puts
         puts "Enter a number to see neighborhoods by borough".blue.bold
         puts "Or type exit"
         puts 
@@ -37,24 +38,7 @@ module NYCMortality17
         case(reply)
                 
             when "1"
-                Scraper.see_manhattan
-                start
-
-            when "2"
-                Scraper.see_the_bronx
-                start
-
-            when "3"
-                Scraper.see_brooklyn
-                start
-
-            when "4"
-                Scraper.see_queens
-                start
-
-            when "5"
-                Scraper.see_staten_island
-                start
+                Scraper.show_manhattan
 
             when "exit"
                 puts "Thanks for visiting!".blue.bold
@@ -71,6 +55,15 @@ module NYCMortality17
             puts "#{index}. #{value.name}".blue
           end
         end
+
+        def show_borough_name(reply)
+            borough = Borough.all[reply]
+            puts borough.name.blue.bold
+            puts "Deaths per 100,000 people"
+            puts "Citywide average: 545.7"
+            puts
+        end
+
 
     end
 end
