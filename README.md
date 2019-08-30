@@ -7,7 +7,7 @@ Providing easier access to the details of the 2017 Summary of Vital Statistics f
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'NYC_mortality_17'
+gem 'nyc_mortality_17'
 ```
 
 And then execute:
