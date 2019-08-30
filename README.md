@@ -1,6 +1,6 @@
 # NYCMortality17
 
-Providing easier access to the details of the 2017 Summary of Vital Statistics for the City of New York -- basically, which neighborhoods had the highest death rates. A type of "interactive sidebar" that could pair well with online journalism. Development still in progress.
+Providing easier access to the details of the 2017 Summary of Vital Statistics for the City of New York (basically, which neighborhoods had the highest death rates). A type of "interactive sidebar" that could pair well with online journalism. Development still in progress.
 
 ## Installation
 
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install NYC_mortality_17
+    $ gem install nyc_mortality_17
 
 ## Usage
 
