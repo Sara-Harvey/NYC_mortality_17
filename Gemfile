@@ -7,3 +7,5 @@ gemspec
 gem 'pdf-reader'
 gem 'pdf-reader-turtletext'
 gem 'colorize'
+gem 'pg', '~> 0.18.4'
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
