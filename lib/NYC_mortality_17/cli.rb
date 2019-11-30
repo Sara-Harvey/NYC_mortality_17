@@ -2,6 +2,11 @@ require 'pry'
 module NYCMortality17
   class CLI
 
+    get "/" do
+      erb :welcome
+    end
+
+
     def intro
         Scraper.read
         Scraper.make_locations
